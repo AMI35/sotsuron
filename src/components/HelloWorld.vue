@@ -86,4 +86,70 @@ const images = [
   /* justify-content: flex-start; */
   /* width: fit-content; */
 }
+iframe {
+  height: 700px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+img {
+  width: 55%;
+}
+
+.title {
+  border: 1px solid black;
+  width: 100%;
+  padding: 0px 10px;
+}
+
+.form-container {
+  display: flex;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.right-container {
+  width: 50vw;
+}
+
+@media screen and (max-width: 500px) {
+  /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+
+  iframe {
+    height: 400px;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .right-container {
+    padding-right: 0px;
+    height: 100%;
+    margin-left: 100px;
+  }
+
+  .carousel {
+    height: 100%;
+    /* width: 300px; */
+    /* border: 1px solid red; */
+  }
+
+  .carousel__viewport {
+    height: 385px;
+    /* width: 300px; */
+    /* border: 1px solid blue; */
+  }
+}
 </style>
