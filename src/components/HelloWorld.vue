@@ -58,7 +58,8 @@ const images = [
     <div class="right-container">
       <carousel :items-to-show="1">
         <slide v-for="(image, i) in images" :key="i">
-          <img :src="image.src" :alt="image.name" />
+          <!-- <img :src="image.src" :alt="image.name" /> -->
+          <img src="../assets/images/acs1.png" alt="" />
         </slide>
         <template #addons>
           <navigation />
