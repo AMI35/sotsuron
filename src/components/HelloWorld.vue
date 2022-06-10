@@ -8,14 +8,14 @@ defineProps({
 });
 
 const images = [
-  { src: "../assets/images/acs1.png", name: "roji1" },
-  { src: "../assets/images/asc2.png", name: "roji2" },
-  { src: "../assets/images/asc3.png", name: "roji2" },
-  { src: "../assets/images/asc4.png", name: "roji2" },
-  { src: "../assets/images/asc5.png", name: "roji2" },
-  { src: "../assets/images/asc6.png", name: "roji2" },
-  { src: "../assets/images/asc7.png", name: "roji2" },
-  { src: "../assets/images/asc8.png", name: "roji2" },
+  { src: "src/assets/images/acs1.png", name: "roji1" },
+  { src: "src/assets/images/asc2.png", name: "roji2" },
+  { src: "src/assets/images/asc3.png", name: "roji2" },
+  { src: "src/assets/images/asc4.png", name: "roji2" },
+  { src: "src/assets/images/asc5.png", name: "roji2" },
+  { src: "src/assets/images/asc6.png", name: "roji2" },
+  { src: "src/assets/images/asc7.png", name: "roji2" },
+  { src: "src/assets/images/asc8.png", name: "roji2" },
   { src: "src/assets/images/asc9.png", name: "roji2" },
   { src: "src/assets/images/asc10.png", name: "roji2" },
   { src: "src/assets/images/asc11.png", name: "roji2" },
@@ -57,10 +57,29 @@ const images = [
     >
     <div class="right-container">
       <carousel :items-to-show="1">
-        <slide v-for="(image, i) in images" :key="i">
+        <!-- <slide v-for="(image, i) in images" :key="i">
           <img :src="image.src" :alt="image.name" />
-          <!-- <img src="../assets/images/acs1.png" alt="" /> -->
+        </slide> -->
+        <slide v-for="(image, i) in 4" :key="i">
+          <img v-if="i === 0" src="../assets/images/acs1.png" alt="roji1" />
+          <img v-if="i === 1" src="../assets/images/asc2.png" alt="roji2" />
+          <img v-if="i === 2" src="../assets/images/asc3.png" alt="roji3" />
+          <img v-if="i === 3" src="../assets/images/asc4.png" alt="roji4" />
+          <img v-if="i === 4" src="../assets/images/asc5.png" alt="roji5" />
+          <!-- <img src="../assets/images/asc6.png" alt="" />
+          <img src="../assets/images/asc7.png" alt="" />
+          <img src="../assets/images/asc8.png" alt="" />
+          <img src="../assets/images/asc9.png" alt="" />
+          <img src="../assets/images/asc10.png" alt="" />
+          <img src="../assets/images/asc11.png" alt="" />
+          <img src="../assets/images/asc12.png" alt="" />
+          <img src="../assets/images/asc13.png" alt="" />
+          <img src="../assets/images/asc14.png" alt="" />
+          <img src="../assets/images/asc15.png" alt="" />
+          <img src="../assets/images/asc16.png" alt="" />
+          <img src="../assets/images/asc17.png" alt="" /> -->
         </slide>
+
         <template #addons>
           <navigation />
           <pagination />
