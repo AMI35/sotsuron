@@ -40,7 +40,10 @@ const images = [
 <template>
   <div class="title">
     <h1>路地写真の印象評価</h1>
-    <h2>次の路地写真を見て、最も適切な項目を選んでください。</h2>
+    <h3>次の路地写真を見て、最も適切な項目を選んでください。</h3>
+    <a
+      >※注意※Googleアカウントにログインすると他のページに飛んでしまうため、ログインせずに回答をお願いします。</a
+    >
   </div>
   <div class="form-container">
     <iframe
