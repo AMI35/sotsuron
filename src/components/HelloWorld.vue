@@ -8,14 +8,14 @@ defineProps({
 });
 
 const images = [
-  { src: "src/assets/images/acs1.png", name: "roji1" },
-  { src: "src/assets/images/asc2.png", name: "roji2" },
-  { src: "src/assets/images/asc3.png", name: "roji2" },
-  { src: "src/assets/images/asc4.png", name: "roji2" },
-  { src: "src/assets/images/asc5.png", name: "roji2" },
-  { src: "src/assets/images/asc6.png", name: "roji2" },
-  { src: "src/assets/images/asc7.png", name: "roji2" },
-  { src: "src/assets/images/asc8.png", name: "roji2" },
+  { src: "../assets/images/acs1.png", name: "roji1" },
+  { src: "../assets/images/asc2.png", name: "roji2" },
+  { src: "../assets/images/asc3.png", name: "roji2" },
+  { src: "../assets/images/asc4.png", name: "roji2" },
+  { src: "../assets/images/asc5.png", name: "roji2" },
+  { src: "../assets/images/asc6.png", name: "roji2" },
+  { src: "../assets/images/asc7.png", name: "roji2" },
+  { src: "../assets/images/asc8.png", name: "roji2" },
   { src: "src/assets/images/asc9.png", name: "roji2" },
   { src: "src/assets/images/asc10.png", name: "roji2" },
   { src: "src/assets/images/asc11.png", name: "roji2" },
@@ -58,8 +58,8 @@ const images = [
     <div class="right-container">
       <carousel :items-to-show="1">
         <slide v-for="(image, i) in images" :key="i">
-          <!-- <img :src="image.src" :alt="image.name" /> -->
-          <img src="../assets/images/acs1.png" alt="" />
+          <img :src="image.src" :alt="image.name" />
+          <!-- <img src="../assets/images/acs1.png" alt="" /> -->
         </slide>
         <template #addons>
           <navigation />
