@@ -426,6 +426,10 @@ img {
   width: 55%;
 }
 
+button {
+  padding: 10px 20px;
+}
+
 .title {
   border: 1px solid black;
   width: 100%;
