@@ -13,9 +13,11 @@ const pageHandler = (count: number) => {
 };
 
 const pageNames = [
-  { page: 1, name: "1~9" },
-  { page: 2, name: "10~18" },
-  { page: 3, name: "19~26" },
+  { page: 1, name: "1~5" },
+  { page: 2, name: "5~10" },
+  { page: 3, name: "10~15" },
+  { page: 4, name: "15~19" },
+  { page: 5, name: "20~26" },
 ];
 </script>
 
@@ -46,16 +48,12 @@ const pageNames = [
     >
     <div class="right-container">
       <carousel :items-to-show="1">
-        <slide v-for="(image, i) in 9" :key="i">
+        <slide v-for="(image, i) in 5" :key="i">
           <img v-if="i === 0" src="../assets/images/acs1.png" alt="roji1" />
           <img v-if="i === 1" src="../assets/images/asc2.png" alt="roji2" />
           <img v-if="i === 2" src="../assets/images/asc3.png" alt="roji3" />
           <img v-if="i === 3" src="../assets/images/asc4.png" alt="roji4" />
           <img v-if="i === 4" src="../assets/images/asc5.png" alt="roji5" />
-          <img v-if="i === 5" src="../assets/images/asc6.png" alt="" />
-          <img v-if="i === 6" src="../assets/images/asc7.png" alt="" />
-          <img v-if="i === 7" src="../assets/images/asc8.png" alt="" />
-          <img v-if="i === 8" src="../assets/images/asc9.png" alt="" />
         </slide>
 
         <template #addons>
@@ -77,16 +75,12 @@ const pageNames = [
     >
     <div class="right-container">
       <carousel :items-to-show="1">
-        <slide v-for="(image, i) in 9" :key="i">
-          <img v-if="i === 0" src="../assets/images/asc10.png" alt="roji1" />
-          <img v-if="i === 1" src="../assets/images/asc11.png" alt="roji2" />
-          <img v-if="i === 2" src="../assets/images/asc12.png" alt="roji3" />
-          <img v-if="i === 3" src="../assets/images/asc13.png" alt="roji4" />
-          <img v-if="i === 4" src="../assets/images/asc14.png" alt="roji5" />
-          <img v-if="i === 5" src="../assets/images/asc15.png" alt="" />
-          <img v-if="i === 6" src="../assets/images/asc16.png" alt="" />
-          <img v-if="i === 7" src="../assets/images/asc17.png" alt="" />
-          <img v-if="i === 8" src="../assets/images/asc18.png" alt="" />
+        <slide v-for="(image, i) in 5" :key="i">
+          <img v-if="i === 0" src="../assets/images/asc6.png" alt="roji1" />
+          <img v-if="i === 1" src="../assets/images/asc7.png" alt="roji2" />
+          <img v-if="i === 2" src="../assets/images/asc8.png" alt="roji3" />
+          <img v-if="i === 3" src="../assets/images/asc9.png" alt="roji4" />
+          <img v-if="i === 4" src="../assets/images/asc10.png" alt="roji5" />
         </slide>
 
         <template #addons>
@@ -108,15 +102,67 @@ const pageNames = [
     >
     <div class="right-container">
       <carousel :items-to-show="1">
-        <slide v-for="(image, i) in 8" :key="i">
-          <img v-if="i === 0" src="../assets/images/asc19.png" alt="roji1" />
-          <img v-if="i === 1" src="../assets/images/asc20.png" alt="roji2" />
-          <img v-if="i === 2" src="../assets/images/asc21.png" alt="roji3" />
-          <img v-if="i === 3" src="../assets/images/asc22.png" alt="roji4" />
-          <img v-if="i === 4" src="../assets/images/asc23.png" alt="roji5" />
-          <img v-if="i === 5" src="../assets/images/asc24.png" alt="" />
-          <img v-if="i === 6" src="../assets/images/asc25.png" alt="" />
-          <img v-if="i === 7" src="../assets/images/asc26.png" alt="" />
+        <slide v-for="(image, i) in 5" :key="i">
+          <img v-if="i === 0" src="../assets/images/asc11.png" alt="roji1" />
+          <img v-if="i === 1" src="../assets/images/asc12.png" alt="roji2" />
+          <img v-if="i === 2" src="../assets/images/asc13.png" alt="roji3" />
+          <img v-if="i === 3" src="../assets/images/asc14.png" alt="roji4" />
+          <img v-if="i === 4" src="../assets/images/asc15.png" alt="roji5" />
+        </slide>
+
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
+    </div>
+  </div>
+  <div v-if="page === 4" class="form-container">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSfwklGUjB3ecB246scVwYv375syxAlPZRCOPxsCEUMdVpJeBQ/viewform?embedded=true"
+      width="640"
+      height="8923"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >読み込んでいます…</iframe
+    >
+    <div class="right-container">
+      <carousel :items-to-show="1">
+        <slide v-for="(image, i) in 5" :key="i">
+          <img v-if="i === 0" src="../assets/images/asc16.png" alt="roji1" />
+          <img v-if="i === 1" src="../assets/images/asc17.png" alt="roji2" />
+          <img v-if="i === 2" src="../assets/images/asc18.png" alt="roji3" />
+          <img v-if="i === 3" src="../assets/images/asc19.png" alt="roji4" />
+          <img v-if="i === 4" src="../assets/images/asc20.png" alt="roji5" />
+        </slide>
+
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
+    </div>
+  </div>
+  <div v-if="page === 5" class="form-container">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSe75ylEQgWmSoncRSTueLtYIiHEqPpErpVMbGmV6jEi5W2sMg/viewform?embedded=true"
+      width="640"
+      height="8923"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >読み込んでいます…</iframe
+    >
+    <div class="right-container">
+      <carousel :items-to-show="1">
+        <slide v-for="(image, i) in 6" :key="i">
+          <img v-if="i === 0" src="../assets/images/asc21.png" alt="roji1" />
+          <img v-if="i === 1" src="../assets/images/asc22.png" alt="roji2" />
+          <img v-if="i === 2" src="../assets/images/asc23.png" alt="roji3" />
+          <img v-if="i === 3" src="../assets/images/asc24.png" alt="roji4" />
+          <img v-if="i === 4" src="../assets/images/asc25.png" alt="roji5" />
+          <img v-if="i === 5" src="../assets/images/asc26.png" alt="" />
         </slide>
 
         <template #addons>
