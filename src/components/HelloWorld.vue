@@ -414,6 +414,7 @@ const pageHandler = (count: number) => {
   /* justify-content: flex-start; */
   /* width: fit-content; */
 }
+
 iframe {
   height: 700px;
   overflow-y: scroll;
@@ -471,13 +472,15 @@ img {
   .form-container {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     width: 100%;
   }
 
   .right-container {
-    padding-right: 0px;
+    display: flex;
+    /* padding-right: 0px; */
     height: 100%;
-    margin-left: 100px;
+    /* margin-left: 100px; */
   }
 
   .carousel {
