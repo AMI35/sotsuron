@@ -7,33 +7,15 @@ defineProps({
   msg: String,
 });
 
-const images = [
-  { src: "src/assets/images/acs1.png", name: "roji1" },
-  { src: "src/assets/images/asc2.png", name: "roji2" },
-  { src: "src/assets/images/asc3.png", name: "roji2" },
-  { src: "src/assets/images/asc4.png", name: "roji2" },
-  { src: "src/assets/images/asc5.png", name: "roji2" },
-  { src: "src/assets/images/asc6.png", name: "roji2" },
-  { src: "src/assets/images/asc7.png", name: "roji2" },
-  { src: "src/assets/images/asc8.png", name: "roji2" },
-  { src: "src/assets/images/asc9.png", name: "roji2" },
-  { src: "src/assets/images/asc10.png", name: "roji2" },
-  { src: "src/assets/images/asc11.png", name: "roji2" },
-  { src: "src/assets/images/asc12.png", name: "roji2" },
-  { src: "src/assets/images/asc13.png", name: "roji2" },
-  { src: "src/assets/images/asc14.png", name: "roji2" },
-  { src: "src/assets/images/asc15.png", name: "roji2" },
-  { src: "src/assets/images/asc16.png", name: "roji2" },
-  { src: "src/assets/images/asc17.png", name: "roji2" },
-  { src: "src/assets/images/asc18.png", name: "roji2" },
-  { src: "src/assets/images/asc19.png", name: "roji2" },
-  { src: "src/assets/images/asc20.png", name: "roji2" },
-  { src: "src/assets/images/asc21.png", name: "roji2" },
-  { src: "src/assets/images/asc22.png", name: "roji2" },
-  { src: "src/assets/images/asc23.png", name: "roji2" },
-  { src: "src/assets/images/asc24.png", name: "roji2" },
-  { src: "src/assets/images/asc25.png", name: "roji2" },
-  { src: "src/assets/images/asc26.png", name: "roji2" },
+const page = ref(1);
+const pageHandler = (count: number) => {
+  page.value = page.value + count > 0 ? page.value + count : 1;
+};
+
+const pageNames = [
+  { page: 1, name: "1~9" },
+  { page: 2, name: "10~18" },
+  { page: 3, name: "19~26" },
 ];
 </script>
 
@@ -45,11 +27,18 @@ const images = [
       >※注意※Googleアカウントにログインすると他のページに飛んでしまうため、ログインせずに回答をお願いします。</a
     >
   </div>
-  <div class="form-container">
+  <!-- 1 - 9 10 - 18 19 - 26 -->
+  <div v-for="pageName in pageNames" :key="pageName.page">
+    <div v-if="pageName.page === page">{{ pageName.name }}</div>
+  </div>
+  <!-- <div v-if="page === 1">1 ~ 9</div> -->
+  <button @click="pageHandler(-1)">前へ</button>
+  <button @click="pageHandler(1)">次へ</button>
+  <div v-if="page === 1" class="form-container">
     <iframe
       src="https://docs.google.com/forms/d/e/1FAIpQLSeyBLQOOe_t6ZG6lX1KdZ4ueJglATv-VJ1avL8IuD1XDYpJbg/viewform?embedded=true"
       width="640"
-      height="11540"
+      height="8868"
       frameborder="0"
       marginheight="0"
       marginwidth="0"
@@ -57,27 +46,77 @@ const images = [
     >
     <div class="right-container">
       <carousel :items-to-show="1">
-        <!-- <slide v-for="(image, i) in images" :key="i">
-          <img :src="image.src" :alt="image.name" />
-        </slide> -->
-        <slide v-for="(image, i) in 4" :key="i">
+        <slide v-for="(image, i) in 9" :key="i">
           <img v-if="i === 0" src="../assets/images/acs1.png" alt="roji1" />
           <img v-if="i === 1" src="../assets/images/asc2.png" alt="roji2" />
           <img v-if="i === 2" src="../assets/images/asc3.png" alt="roji3" />
           <img v-if="i === 3" src="../assets/images/asc4.png" alt="roji4" />
           <img v-if="i === 4" src="../assets/images/asc5.png" alt="roji5" />
-          <!-- <img src="../assets/images/asc6.png" alt="" />
-          <img src="../assets/images/asc7.png" alt="" />
-          <img src="../assets/images/asc8.png" alt="" />
-          <img src="../assets/images/asc9.png" alt="" />
-          <img src="../assets/images/asc10.png" alt="" />
-          <img src="../assets/images/asc11.png" alt="" />
-          <img src="../assets/images/asc12.png" alt="" />
-          <img src="../assets/images/asc13.png" alt="" />
-          <img src="../assets/images/asc14.png" alt="" />
-          <img src="../assets/images/asc15.png" alt="" />
-          <img src="../assets/images/asc16.png" alt="" />
-          <img src="../assets/images/asc17.png" alt="" /> -->
+          <img v-if="i === 5" src="../assets/images/asc6.png" alt="" />
+          <img v-if="i === 6" src="../assets/images/asc7.png" alt="" />
+          <img v-if="i === 7" src="../assets/images/asc8.png" alt="" />
+          <img v-if="i === 8" src="../assets/images/asc9.png" alt="" />
+        </slide>
+
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
+    </div>
+  </div>
+  <div v-if="page === 2" class="form-container">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSdmX20Z8w8YhuOdcufupzqHZnvOx_PUQ1oWJYTgkiriAVCU-w/viewform?embedded=true"
+      width="640"
+      height="8868"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >読み込んでいます…</iframe
+    >
+    <div class="right-container">
+      <carousel :items-to-show="1">
+        <slide v-for="(image, i) in 9" :key="i">
+          <img v-if="i === 0" src="../assets/images/asc10.png" alt="roji1" />
+          <img v-if="i === 1" src="../assets/images/asc11.png" alt="roji2" />
+          <img v-if="i === 2" src="../assets/images/asc12.png" alt="roji3" />
+          <img v-if="i === 3" src="../assets/images/asc13.png" alt="roji4" />
+          <img v-if="i === 4" src="../assets/images/asc14.png" alt="roji5" />
+          <img v-if="i === 5" src="../assets/images/asc15.png" alt="" />
+          <img v-if="i === 6" src="../assets/images/asc16.png" alt="" />
+          <img v-if="i === 7" src="../assets/images/asc17.png" alt="" />
+          <img v-if="i === 8" src="../assets/images/asc18.png" alt="" />
+        </slide>
+
+        <template #addons>
+          <navigation />
+          <pagination />
+        </template>
+      </carousel>
+    </div>
+  </div>
+  <div v-if="page === 3" class="form-container">
+    <iframe
+      src="https://docs.google.com/forms/d/e/1FAIpQLSeO_RZ0nlmpfOkuzqnK4taKBJMRwJTFzvTuzI1cvaIiByB6lg/viewform?embedded=true"
+      width="640"
+      height="8868"
+      frameborder="0"
+      marginheight="0"
+      marginwidth="0"
+      >読み込んでいます…</iframe
+    >
+    <div class="right-container">
+      <carousel :items-to-show="1">
+        <slide v-for="(image, i) in 8" :key="i">
+          <img v-if="i === 0" src="../assets/images/asc19.png" alt="roji1" />
+          <img v-if="i === 1" src="../assets/images/asc20.png" alt="roji2" />
+          <img v-if="i === 2" src="../assets/images/asc21.png" alt="roji3" />
+          <img v-if="i === 3" src="../assets/images/asc22.png" alt="roji4" />
+          <img v-if="i === 4" src="../assets/images/asc23.png" alt="roji5" />
+          <img v-if="i === 5" src="../assets/images/asc24.png" alt="" />
+          <img v-if="i === 6" src="../assets/images/asc25.png" alt="" />
+          <img v-if="i === 7" src="../assets/images/asc26.png" alt="" />
         </slide>
 
         <template #addons>
