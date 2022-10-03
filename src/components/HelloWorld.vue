@@ -113,7 +113,6 @@ const pageHandler = (count: number) => {
     </div>
     <div v-else-if="page === 7" class="form-container">
       <iframe
-        <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSdlqkThx8PxMecVB5utjSnElatK79JQrbm-x2nkccjcVS93Pg/viewform?embedded=true"
         width="640"
         height="5290"
@@ -338,7 +337,6 @@ const pageHandler = (count: number) => {
     </div>
     <div v-else-if="page === 23" class="form-container">
       <iframe
-        <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSfafsgMEjsA61KZvS_bdF6puYRqVT4ezsrnpoEVZq8rL4n86w/viewform?embedded=true"
         width="640"
         height="5290"
