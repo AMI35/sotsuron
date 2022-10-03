@@ -37,7 +37,8 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <img src="../assets/images/acs1.png" alt="roji1" />
+        <div>1枚目</div>
+        <img src="../assets/images/asc1.png" alt="roji1" />
       </div>
     </div>
     <div v-else-if="page === 2" class="form-container">
@@ -389,7 +390,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <img src="../assets/images/asc25.png" alt="roji1" />
+        <img src="../assets/images/asc26.png" alt="roji1" />
       </div>
     </div>
     <div v-else-if="page === 27" class="form-container">
@@ -403,7 +404,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <img src="../assets/images/asc25.png" alt="roji1" />
+        <img src="../assets/images/asc27.png" alt="roji1" />
       </div>
     </div>
     <div v-else-if="page === 28" class="form-container">
@@ -417,7 +418,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <img src="../assets/images/asc25.png" alt="roji1" />
+        <img src="../assets/images/asc28.png" alt="roji1" />
       </div>
     </div>
     <div v-else-if="page === 29" class="form-container">
@@ -431,10 +432,10 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <img src="../assets/images/asc25.png" alt="roji1" />
+        <img src="../assets/images/asc29.png" alt="roji1" />
       </div>
     </div>
-    <div v-else-if="page === 30" class="form-container">
+    <div v-else class="form-container">
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSc7NCoxQACNwn6TU3IIiBLSFckj5LH0Pq47ph5prk-WUfPWwg/viewform?embedded=true"
         width="640"
@@ -445,21 +446,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <img src="../assets/images/asc25.png" alt="roji1" />
-      </div>
-    </div>
-    <div v-else class="form-container">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSc2B2hMRLeX3xLD-DkolUsBfQYPz7THr2VsJPVjWrL8jHaX7Q/viewform?embedded=true"
-        width="640"
-        height="8993"
-        frameborder="0"
-        marginheight="0"
-        marginwidth="0"
-        >読み込んでいます…</iframe
-      >
-      <div class="right-container">
-        <img src="../assets/images/asc26.png" alt="roji1" />
+        <img src="../assets/images/asc30.png" alt="roji1" />
       </div>
     </div>
     <div class="button-container">
