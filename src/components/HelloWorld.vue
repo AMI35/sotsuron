@@ -49,7 +49,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>2枚目</div>
+        <div>1枚目</div>
         <img src="../assets/images/asc1.png" alt="roji1" />
       </div>
     </div>
