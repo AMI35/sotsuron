@@ -17,8 +17,8 @@ const pageHandler = (count: number) => {
 </script>
 
 <template>
-  <div class="title" style="border: solid 2px rebeccapurple">
-    <h1>昼と夜の路地写真における魅力度の研究</h1>
+  <div class="title">
+    <h1 style="color: rebeccapurple">昼と夜の路地写真における魅力度の研究</h1>
     <h3>次の路地写真を見て、最も適切な項目を選んでください。</h3>
     ※注意※<br />
 
@@ -49,7 +49,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>1枚目</div>
+        <div class="page-number">1枚目</div>
         <img src="../assets/images/asc1.png" alt="roji1" />
       </div>
     </div>
@@ -64,7 +64,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>2枚目</div>
+        <div class="page-number">2枚目</div>
         <img src="../assets/images/asc2.png" alt="roji1" />
       </div>
     </div>
@@ -79,7 +79,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>3枚目</div>
+        <div class="page-number">3枚目</div>
         <img src="../assets/images/asc3.png" alt="roji1" />
       </div>
     </div>
@@ -94,7 +94,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>4枚目</div>
+        <div class="page-number">4枚目</div>
         <img src="../assets/images/asc4.png" alt="roji1" />
       </div>
     </div>
@@ -109,7 +109,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>5枚目</div>
+        <div class="page-number">5枚目</div>
         <img src="../assets/images/asc5.png" alt="roji1" />
       </div>
     </div>
@@ -124,7 +124,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>6枚目</div>
+        <div class="page-number">6枚目</div>
         <img src="../assets/images/asc6.png" alt="roji1" />
       </div>
     </div>
@@ -139,7 +139,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>7枚目</div>
+        <div class="page-number">7枚目</div>
         <img src="../assets/images/asc7.png" alt="roji1" />
       </div>
     </div>
@@ -154,7 +154,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>8枚目</div>
+        <div class="page-number">8枚目</div>
         <img src="../assets/images/asc8.png" alt="roji1" />
       </div>
     </div>
@@ -169,7 +169,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>9枚目</div>
+        <div class="page-number">9枚目</div>
         <img src="../assets/images/asc9.png" alt="roji1" />
       </div>
     </div>
@@ -184,7 +184,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>10枚目</div>
+        <div class="page-number">10枚目</div>
         <img src="../assets/images/asc10.png" alt="roji1" />
       </div>
     </div>
@@ -199,7 +199,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>11枚目</div>
+        <div class="page-number">11枚目</div>
         <img src="../assets/images/asc11.png" alt="roji1" />
       </div>
     </div>
@@ -214,7 +214,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>12枚目</div>
+        <div class="page-number">12枚目</div>
         <img src="../assets/images/asc12.png" alt="roji1" />
       </div>
     </div>
@@ -229,7 +229,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>13枚目</div>
+        <div class="page-number">13枚目</div>
         <img src="../assets/images/asc13.png" alt="roji1" />
       </div>
     </div>
@@ -244,7 +244,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>14枚目</div>
+        <div class="page-number">14枚目</div>
         <img src="../assets/images/asc14.png" alt="roji1" />
       </div>
     </div>
@@ -259,7 +259,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>15枚目</div>
+        <div class="page-number">15枚目</div>
         <img src="../assets/images/asc15.png" alt="roji1" />
       </div>
     </div>
@@ -274,7 +274,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>16枚目</div>
+        <div class="page-number">16枚目</div>
         <img src="../assets/images/asc16.png" alt="roji1" />
       </div>
     </div>
@@ -289,7 +289,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>17枚目</div>
+        <div class="page-number">17枚目</div>
         <img src="../assets/images/asc17.png" alt="roji1" />
       </div>
     </div>
@@ -304,7 +304,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>18枚目</div>
+        <div class="page-number">18枚目</div>
         <img src="../assets/images/asc18.png" alt="roji1" />
       </div>
     </div>
@@ -319,7 +319,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>19枚目</div>
+        <div class="page-number">19枚目</div>
         <img src="../assets/images/asc19.png" alt="roji1" />
       </div>
     </div>
@@ -334,7 +334,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>20枚目</div>
+        <div class="page-number">20枚目</div>
         <img src="../assets/images/asc20.png" alt="roji1" />
       </div>
     </div>
@@ -349,7 +349,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>21枚目</div>
+        <div class="page-number">21枚目</div>
         <img src="../assets/images/asc21.png" alt="roji1" />
       </div>
     </div>
@@ -364,7 +364,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>22枚目</div>
+        <div class="page-number">22枚目</div>
         <img src="../assets/images/asc22.png" alt="roji1" />
       </div>
     </div>
@@ -379,7 +379,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>23枚目</div>
+        <div class="page-number">23枚目</div>
         <img src="../assets/images/asc23.png" alt="roji1" />
       </div>
     </div>
@@ -394,7 +394,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>24枚目</div>
+        <div class="page-number">24枚目</div>
         <img src="../assets/images/asc24.png" alt="roji1" />
       </div>
     </div>
@@ -409,7 +409,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>25枚目</div>
+        <div class="page-number">25枚目</div>
         <img src="../assets/images/asc25.png" alt="roji1" />
       </div>
     </div>
@@ -424,7 +424,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>26枚目</div>
+        <div class="page-number">26枚目</div>
         <img src="../assets/images/asc26.png" alt="roji1" />
       </div>
     </div>
@@ -439,7 +439,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>27枚目</div>
+        <div class="page-number">27枚目</div>
         <img src="../assets/images/asc27.png" alt="roji1" />
       </div>
     </div>
@@ -454,7 +454,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>28枚目</div>
+        <div class="page-number">28枚目</div>
         <img src="../assets/images/asc28.png" alt="roji1" />
       </div>
     </div>
@@ -469,7 +469,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>29枚目</div>
+        <div class="page-number">29枚目</div>
         <img src="../assets/images/asc29.png" alt="roji1" />
       </div>
     </div>
@@ -484,7 +484,7 @@ const pageHandler = (count: number) => {
         >読み込んでいます…</iframe
       >
       <div class="right-container">
-        <div>30枚目</div>
+        <div class="page-number">30枚目</div>
         <img src="../assets/images/asc30.png" alt="roji1" />
       </div>
     </div>
@@ -542,10 +542,12 @@ iframe {
   overflow-y: scroll;
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
+  border: solid 2px rgb(213, 205, 221);
 }
 
 img {
-  width: 55%;
+  width: 100%;
+  max-width: 500px;
 }
 
 button {
@@ -553,15 +555,24 @@ button {
 }
 
 .title {
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  background-color: rgb(213, 205, 221);
   width: 100%;
-  padding: 0px 10px;
+  /* max-width: 1080px; */
+  padding: 10px;
 }
 
 .form-container {
   display: flex;
   width: 100vw;
   overflow: hidden;
+}
+
+.page-number {
+  display: flex;
+  color: rebeccapurple;
+  font-size: 20px;
+  font-style: bold;
 }
 
 .right-container {
@@ -572,7 +583,7 @@ button {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 40%;
+  width: 100%;
   padding: 20px;
   background-color: rgb(213, 205, 221);
 }
