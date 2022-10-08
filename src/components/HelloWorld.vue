@@ -17,7 +17,7 @@ const pageHandler = (count: number) => {
 </script>
 
 <template>
-  <div class="title">
+  <div class="title" style="border: solid 2px rebeccapurple">
     <h1>昼と夜の路地写真における魅力度の研究</h1>
     <h3>次の路地写真を見て、最も適切な項目を選んでください。</h3>
     ※注意※<br />
@@ -504,7 +504,12 @@ const pageHandler = (count: number) => {
           {{ page === 1 ? null : `${page - 1}枚目` }}
         </div>
       </div>
-      <button @click="pageHandler(1)">次へ</button>
+      <button
+        style="border: solid 4px blue; border-radius: 15%"
+        @click="pageHandler(1)"
+      >
+        次へ
+      </button>
     </div>
   </div>
 </template>
@@ -564,6 +569,8 @@ button {
   align-items: center;
   width: 40%;
   padding: 20px;
+  /* background-color: blue; */
+  border: solid 3px rebeccapurple;
 }
 
 @media screen and (max-width: 500px) {
@@ -616,6 +623,7 @@ button {
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    /* background-color: blue; */
   }
 }
 </style>
