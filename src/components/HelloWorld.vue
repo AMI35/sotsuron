@@ -505,7 +505,12 @@ const pageHandler = (count: number) => {
         </div>
       </div>
       <button
-        style="border: solid 4px blue; border-radius: 15%"
+        style="
+          background-color: rgb(198, 50, 50);
+          border: none;
+          color: white;
+          border-radius: 15%;
+        "
         @click="pageHandler(1)"
       >
         次へ
@@ -517,13 +522,13 @@ const pageHandler = (count: number) => {
 <style>
 .carousel {
   height: 600px;
+  /* color: rgb(198, 50, 50); */
   /* width: 300px; */
   /* border: 1px solid red; */
 }
 .carousel__viewport {
   height: 600px;
   /* width: 300px; */
-  /* border: 1px solid blue; */
 }
 .carousel__track {
 }
@@ -569,8 +574,7 @@ button {
   align-items: center;
   width: 40%;
   padding: 20px;
-  /* background-color: blue; */
-  border: solid 3px rebeccapurple;
+  background-color: rgb(213, 205, 221);
 }
 
 @media screen and (max-width: 500px) {
@@ -615,7 +619,6 @@ button {
   .carousel__viewport {
     height: 385px;
     /* width: 300px; */
-    /* border: 1px solid blue; */
   }
 
   .button-container {
@@ -623,7 +626,6 @@ button {
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    /* background-color: blue; */
   }
 }
 </style>
